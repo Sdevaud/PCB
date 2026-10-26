@@ -1,0 +1,21 @@
+# Fichiers de sauvegarde KiCad
+*-backups/
+*.bak
+*.kicad_prl
+
+# Fichiers temporaires et de verrouillage
+*.lck
+*.kicad_pcb.lck
+*.kicad_sch.lck
+*.tmp
+
+# Fichiers de routage temporaires
+*.ses
+*.dsn
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Historique local des éditeurs
+.history/

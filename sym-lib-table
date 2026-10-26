@@ -1,0 +1,5 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "DRV8353RSRGZR") (type "KiCad") (uri "/home/seby/Documents/MA_4/PDS/ul_DRV8353RSRGZR/KiCADv6/2026-10-14_15-57-01.kicad_sym") (options "") (descr ""))
+	(lib (name "Custom") (type "Legacy") (uri "${KIPRJMOD}/design/Custom.lib") (options "") (descr ""))
+)

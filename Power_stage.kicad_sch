@@ -2083,6 +2083,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "TI : Tmin = 400 ns\nTI : ton = 1.385*1e-10*RT/Vin\nton = D * T = (Vout/Vin) / f\nD = 5/24 = 0.208 \nfmax = 521 kHz\n-> 200KHz"
+		(exclude_from_sim no)
+		(at 82.55 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "22a590ff-20bb-4a27-a1b2-01ba6d127048")
+	)
 	(text "Solution alimentation B"
 		(exclude_from_sim no)
 		(at 35.56 88.9 0)
@@ -2121,7 +2131,7 @@
 	)
 	(text "Vout = 2.5*(R11 + R12)/R12 = 5V\nR11 = R12 -> 10Kohm\nI = 5/20000 = 250 uA\n\nf = 5/(13.85*1e-10*220"
 		(exclude_from_sim no)
-		(at 62.23 59.69 0)
+		(at 64.77 156.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2129,7 +2139,7 @@
 		)
 		(uuid "d3ee2419-76a1-469f-8a34-69033548f361")
 	)
-	(text "BUCK estimation de \ncourant (max 350 mA) : \nSTM32 : 70mA\nEncodeur : 25 mA\nHall : 30 mA\nCAN : 80 mA\nLED : 15 mA\ndivers 25% : 55\ntotal : 275\n\nreste 75 mA (26.6%)\n"
+	(text "BUCK estimation de \ncourant (max 350 mA) : \nSTM32 : 70mA\nEncodeur : 25 mA\nHall : 30 mA\nCAN : 80 mA\nLED : 15 mA\ndivers 25% : 55\ntotal : 275\n\nreste 75 mA (26.6%)\nPout = I x V \n5 x 0.275 = 1.375 W\n"
 		(exclude_from_sim no)
 		(at 17.78 64.77 0)
 		(effects

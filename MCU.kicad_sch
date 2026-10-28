@@ -3022,6 +3022,16 @@
 		)
 		(uuid "434942fc-a0a4-4c25-a025-2d9e5eeb342c")
 	)
+	(text "pin 0-2 généralement utilisé pour autre chose à vérfiier"
+		(exclude_from_sim no)
+		(at 226.06 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d18e377f-e4e3-460e-834a-6b644f872883")
+	)
 	(junction
 		(at 196.85 35.56)
 		(diameter 0)

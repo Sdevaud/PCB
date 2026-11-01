@@ -2,4 +2,6 @@
 	(version 7)
 	(lib (name "DRV8353RSRGZR") (type "KiCad") (uri "/home/seby/Documents/MA_4/PDS/ul_DRV8353RSRGZR/KiCADv6/2026-10-14_15-57-01.kicad_sym") (options "") (descr ""))
 	(lib (name "Custom") (type "Legacy") (uri "${KIPRJMOD}/design/Custom.lib") (options "") (descr ""))
+	(lib (name "PMV90ENER") (type "KiCad") (uri "${KIPRJMOD}/lib/lib_sym") (options "") (descr ""))
+	(lib (name "SM1206") (type "KiCad") (uri "${KIPRJMOD}/lib/lib_sym") (options "") (descr ""))
 )

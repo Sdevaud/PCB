@@ -700,6 +700,17 @@
 		)
 		(uuid "7e73864e-4217-4377-badf-450cfe4a64fa")
 	)
+	(text "NOTE:\nOne temperature sensor is physically placed between the high-side and low-side MOSFETs of one half-bridge.\nOne temperature sensor is physically placed close th the high-side on one half-bridge.\nOne temperature sensor is physically placed close th the low-side on one half-bridge.\nThe temperature sensors are not electrically connected to the MOSFETs."
+		(exclude_from_sim no)
+		(at 20.32 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f590434f-5f0b-4d1d-a1ac-69c4213b3119")
+	)
 	(junction
 		(at 205.74 50.8)
 		(diameter 0)
@@ -1312,7 +1323,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "03d9dcb4-7d31-4a8a-87ef-549f52d6247a")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR063"
 			(at 36.83 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -1373,7 +1384,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "#PWR05")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -1391,7 +1402,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09bf4715-e41f-4a19-8501-0517561414b3")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR064"
 			(at 120.65 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -1452,7 +1463,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "#PWR07")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -1470,7 +1481,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "164eb60e-4342-40ea-aa25-74e554c5264f")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR065"
 			(at 205.74 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -1531,7 +1542,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "#PWR029")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -1549,7 +1560,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3985ae3d-d849-44ff-b01c-a23cbc0368eb")
-		(property "Reference" "C3"
+		(property "Reference" "C104"
 			(at 60.96 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1560,7 +1571,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n X7R 10V"
+		(property "Value" "100n X7R 50V"
 			(at 60.96 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1571,7 +1582,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 58.1152 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -1582,7 +1593,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA"
 			(at 57.15 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -1604,6 +1615,17 @@
 				)
 			)
 		)
+		(property "moel" "C1608X7R1H104K080AA"
+			(at 57.15 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6414951a-8853-4739-a430-e2edc35624cb")
 		)
@@ -1613,7 +1635,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "C3")
+					(reference "C104")
 					(unit 1)
 				)
 			)
@@ -1653,7 +1675,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 36.83 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -1664,7 +1686,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/en/product/29056/"
 			(at 36.83 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -1676,6 +1698,17 @@
 			)
 		)
 		(property "Description" "Temperature dependent resistor, negative temperature coefficient"
+			(at 36.83 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" "NTCS0603E3473FHT"
 			(at 36.83 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -1712,8 +1745,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "861d993e-2c31-4f0d-8a15-3f7b9f14d216")
-		(property "Reference" "C9"
+		(uuid "7a4b8e12-b1cd-417f-90a6-1342d14fcc19")
+		(property "Reference" "C106"
 			(at 229.87 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1724,7 +1757,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n X7R 10V"
+		(property "Value" "100n X7R 50V"
 			(at 229.87 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1735,7 +1768,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 227.0252 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -1746,7 +1779,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA"
 			(at 226.06 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -1768,16 +1801,27 @@
 				)
 			)
 		)
+		(property "moel" "C1608X7R1H104K080AA"
+			(at 226.06 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
-			(uuid "6a488c57-ef19-4b12-8a05-e9bb4d59b135")
+			(uuid "ee8406ba-b12d-4e41-9c17-4d3011c4c16c")
 		)
 		(pin "1"
-			(uuid "7232a518-7e9c-42e2-ad99-6cd35dcc01c0")
+			(uuid "89758365-c3d0-445e-b947-0cd72b56aeac")
 		)
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "C9")
+					(reference "C106")
 					(unit 1)
 				)
 			)
@@ -1795,7 +1839,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8e8b3226-79ff-441c-91da-7a859d6527b8")
-		(property "Reference" "R9"
+		(property "Reference" "R61"
 			(at 39.37 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1817,7 +1861,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 38.608 60.96 90)
 			(hide yes)
 			(show_name no)
@@ -1828,7 +1872,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/products/Resistors/part/RC0603FR-0710KL"
 			(at 36.83 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -1840,6 +1884,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 36.83 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" "RC0603FR-0710KL"
 			(at 36.83 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -1859,253 +1914,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 140.97 60.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a35d705c-427d-49b5-a068-a7717e9d0acc")
-		(property "Reference" "C5"
-			(at 144.78 59.6899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n X7R 10V"
-			(at 144.78 62.2299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 141.9352 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 140.97 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 140.97 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "fbdb62fb-ce51-4b2f-bf95-8b0532dc6f92")
-		)
-		(pin "1"
-			(uuid "d4e82231-61fd-4141-8eff-c2440ffad9db")
-		)
-		(instances
-			(project "PCB"
-				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Thermistor_NTC")
-		(at 205.74 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b09283c4-cbe2-4c8d-af1b-f11560ba7fb0")
-		(property "Reference" "TH3"
-			(at 208.28 40.9574 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47K 1% NTC"
-			(at 208.28 43.4974 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Temperature dependent resistor, negative temperature coefficient"
-			(at 205.74 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "23dead97-cefa-42ce-8f6b-dc6135167bce")
-		)
-		(pin "1"
-			(uuid "5eb6fc50-de6f-4264-a8fe-a87faddd628e")
-		)
-		(instances
-			(project "PCB"
-				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "TH3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 205.74 60.96 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bfc6db57-2284-4cc7-aba5-dc95f8c43044")
-		(property "Reference" "R13"
-			(at 208.28 59.6899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10k 1%"
-			(at 208.28 62.2299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 207.518 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 205.74 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "791ad5c9-c095-4008-b824-9335d32ad422")
-		)
-		(pin "1"
-			(uuid "2668d555-a3d7-4e11-8528-fa3e4e557f53")
-		)
-		(instances
-			(project "PCB"
-				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "R13")
+					(reference "R61")
 					(unit 1)
 				)
 			)
@@ -2122,7 +1931,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ebaaca5b-5da3-409f-bb36-701953a3b7b8")
+		(uuid "a1409397-e2c0-4430-b8dc-b1743f817fcd")
 		(property "Reference" "TH2"
 			(at 123.19 40.9574 0)
 			(show_name no)
@@ -2145,7 +1954,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 120.65 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -2156,7 +1965,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/en/product/29056/"
 			(at 120.65 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -2178,16 +1987,306 @@
 				)
 			)
 		)
+		(property "model" "NTCS0603E3473FHT"
+			(at 120.65 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
-			(uuid "5db67789-f1b1-4850-a626-c615df062b4f")
+			(uuid "093a9643-5574-4012-b1cb-73dfc5fb3dca")
 		)
 		(pin "1"
-			(uuid "56dde546-f1a2-4158-b79b-3e5b653ef735")
+			(uuid "0564b31c-b592-4602-bec2-0b96549d4fef")
 		)
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
 					(reference "TH2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 140.97 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b0ca93b1-f1ec-4837-a16c-301e8fe68e3b")
+		(property "Reference" "C105"
+			(at 144.78 59.6899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n X7R 50V"
+			(at 144.78 62.2299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 141.9352 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA"
+			(at 140.97 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 140.97 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "moel" "C1608X7R1H104K080AA"
+			(at 140.97 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "871648fe-5b2f-4f52-8ebc-8f66045fb041")
+		)
+		(pin "1"
+			(uuid "87caf14d-d867-498d-922c-95b04f90b867")
+		)
+		(instances
+			(project "PCB"
+				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
+					(reference "C105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 205.74 60.96 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b17a37e2-32d9-4e23-aa15-11756524ec26")
+		(property "Reference" "R63"
+			(at 208.28 59.6899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k 1%"
+			(at 208.28 62.2299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 207.518 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/products/Resistors/part/RC0603FR-0710KL"
+			(at 205.74 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 205.74 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" "RC0603FR-0710KL"
+			(at 205.74 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9a0aa612-1683-4b85-93a2-b9933c331825")
+		)
+		(pin "1"
+			(uuid "5f579f0e-3629-4324-a8d6-09897b6aa088")
+		)
+		(instances
+			(project "PCB"
+				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
+					(reference "R63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Thermistor_NTC")
+		(at 205.74 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2e733e4-c502-4fe9-8a48-decb20b2ec8a")
+		(property "Reference" "TH3"
+			(at 208.28 40.9574 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47K 1% NTC"
+			(at 208.28 43.4974 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 205.74 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/en/product/29056/"
+			(at 205.74 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Temperature dependent resistor, negative temperature coefficient"
+			(at 205.74 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" "NTCS0603E3473FHT"
+			(at 205.74 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "543b15d0-0cd4-4789-a0e4-07fdcdb57031")
+		)
+		(pin "1"
+			(uuid "55b0c946-8f1e-41a3-b635-0fc187888547")
+		)
+		(instances
+			(project "PCB"
+				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
+					(reference "TH3")
 					(unit 1)
 				)
 			)
@@ -2204,8 +2303,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fd174cc5-fea7-461d-8000-146a2f4b2ff0")
-		(property "Reference" "R12"
+		(uuid "ee7f5b63-9e39-41a9-bc7e-2d2c052d2bdd")
+		(property "Reference" "R62"
 			(at 123.19 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2227,7 +2326,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 122.428 60.96 90)
 			(hide yes)
 			(show_name no)
@@ -2238,7 +2337,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/products/Resistors/part/RC0603FR-0710KL"
 			(at 120.65 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -2260,16 +2359,27 @@
 				)
 			)
 		)
+		(property "model" "RC0603FR-0710KL"
+			(at 120.65 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
-			(uuid "937a52e2-b3a9-4399-bd25-1ff9569d2a58")
+			(uuid "cb4463af-9da7-4004-b362-3be8413de316")
 		)
 		(pin "1"
-			(uuid "442a63bb-7053-41e1-9b24-ac5f06f632c2")
+			(uuid "59fe62b7-a4f3-4d26-b968-648edab689fd")
 		)
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "R12")
+					(reference "R62")
 					(unit 1)
 				)
 			)

@@ -1,7 +1,9 @@
 (sym_lib_table
 	(version 7)
-	(lib (name "DRV8353RSRGZR") (type "KiCad") (uri "/home/seby/Documents/MA_4/PDS/ul_DRV8353RSRGZR/KiCADv6/2026-10-14_15-57-01.kicad_sym") (options "") (descr ""))
-	(lib (name "Custom") (type "Legacy") (uri "${KIPRJMOD}/design/Custom.lib") (options "") (descr ""))
-	(lib (name "PMV90ENER") (type "KiCad") (uri "${KIPRJMOD}/lib/lib_sym") (options "") (descr ""))
-	(lib (name "SM1206") (type "KiCad") (uri "${KIPRJMOD}/lib/lib_sym") (options "") (descr ""))
+	(lib (name "Custom") (type "Legacy") (uri "${KIPRJMOD}/libraries/Symbols/Custom.lib") (options "") (descr ""))
+	(lib (name "BAT41KFILM") (type "KiCad") (uri "${KIPRJMOD}/libraries/Symbols/BAT41KFILM.kicad_sym") (options "") (descr ""))
+	(lib (name "TPW1R306PL") (type "KiCad") (uri "${KIPRJMOD}/libraries/Symbols/TPW1R306PL.kicad_sym") (options "") (descr ""))
+	(lib (name "TLV7633DGNR") (type "KiCad") (uri "${KIPRJMOD}/libraries/Symbols/TLV76733DGNR.kicad_sym") (options "") (descr ""))
+	(lib (name "IRLML0040TRPBF") (type "KiCad") (uri "${KIPRJMOD}/libraries/Symbols/IRLML6344TRPBF.kicad_sym") (options "") (descr ""))
+	(lib (name "DRV8353FS") (type "KiCad") (uri "${KIPRJMOD}/libraries/Symbols/DRV8353FS.kicad_sym") (options "") (descr ""))
 )

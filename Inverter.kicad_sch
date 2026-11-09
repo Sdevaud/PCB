@@ -171,6 +171,129 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1246,7 +1369,7 @@
 	)
 	(text "4\n"
 		(exclude_from_sim no)
-		(at 247.65 129.54 0)
+		(at 247.65 124.46 0)
 		(effects
 			(font
 				(size 2.032 2.032)
@@ -1372,9 +1495,9 @@
 		)
 		(uuid "e056a52a-cea8-49fa-850c-2f43e0289587")
 	)
-	(text "R shunt :\ncurrent calculation\nI = U/R, P = R*I**2\nI = 15A -> Prshunt = 0.1125W\nI = 100A -> Prshunt = 5W\n\nVso = 1.65 + G*I*R\nG = (5,10,20,40) (DRV 8353)\nTi recommand Vso = 0.25-3.05 V\nG = 20 and I = +-100 \n-> Vso = 0.65-2.65\nless R -> high current\n\nCshunt : \nattnuate noise\n"
+	(text "R shunt :\ncurrent calculation\nI = U/R, P = R*I**2\nI = 15A -> Prshunt = 0.1125W\nI = 100A -> Prshunt = 5W\nwe choose 2W (model 5W at 70 degr)\n\nVso = 1.65 + G*I*R\nG = (5,10,20,40) (DRV 8353)\nTi recommand Vso = 0.25-3.05 V\nG = 20 and I = +-100 \n-> Vso = 0.65-2.65\nless R -> high current\n\nCshunt : \nattnuate noise\n"
 		(exclude_from_sim no)
-		(at 246.38 148.59 0)
+		(at 246.38 143.51 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1413,10 +1536,22 @@
 		(uuid "11502207-6804-4820-a824-29f0c489a8b7")
 	)
 	(junction
+		(at 115.57 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13563b99-bef9-4ffa-a69e-617aea7a59f9")
+	)
+	(junction
 		(at 58.42 173.99)
 		(diameter 0)
 		(color 194 0 194 1)
 		(uuid "16ca57a8-6c69-4661-a75c-f20185b8db5c")
+	)
+	(junction
+		(at 49.53 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a2c37b6-0212-4374-871e-52eec37d96d8")
 	)
 	(junction
 		(at 194.31 80.01)
@@ -1435,6 +1570,12 @@
 		(diameter 0)
 		(color 194 0 194 1)
 		(uuid "234e615c-71f3-491b-b18f-46152cbc4ede")
+	)
+	(junction
+		(at 74.93 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2353d1ca-a83f-48b1-a008-5f96fd45efb9")
 	)
 	(junction
 		(at 180.34 90.17)
@@ -1459,6 +1600,12 @@
 		(diameter 0)
 		(color 194 0 194 1)
 		(uuid "3280abd3-716d-4a8a-9ee6-fc718300f7a8")
+	)
+	(junction
+		(at 74.93 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "32dc7e72-d40b-478d-a959-146aa9c94322")
 	)
 	(junction
 		(at 194.31 82.55)
@@ -1671,6 +1818,12 @@
 		(uuid "79ca9d70-d8ff-4815-ab6d-0b9c98018336")
 	)
 	(junction
+		(at 48.26 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7eaf55b8-938d-4ee2-95a3-0255da1db8df")
+	)
+	(junction
 		(at 45.72 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1833,6 +1986,12 @@
 		(uuid "c4e26edf-c2b2-4b3e-9cb5-648b98299310")
 	)
 	(junction
+		(at 69.85 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8640816-b006-4f85-a4f2-b1e74a484f56")
+	)
+	(junction
 		(at 58.42 53.34)
 		(diameter 0)
 		(color 194 0 194 1)
@@ -1861,6 +2020,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d12ce486-b3cd-4a5c-a640-4d67d7498cad")
+	)
+	(junction
+		(at 88.9 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dbc506f4-e4ab-4d25-8f38-27ddfb2dbb5c")
 	)
 	(junction
 		(at 58.42 172.72)
@@ -2478,6 +2643,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 33.02) (xy 48.26 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25efe5b7-b135-41e7-9ac0-0c4011aa8090")
+	)
+	(wire
+		(pts
 			(xy 144.78 20.32) (xy 144.78 31.75)
 		)
 		(stroke
@@ -2511,7 +2686,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 48.26) (xy 74.93 48.26)
+			(xy 58.42 48.26) (xy 69.85 48.26)
 		)
 		(stroke
 			(width 0.3556)
@@ -2699,16 +2874,6 @@
 			(color 194 0 194 1)
 		)
 		(uuid "3e23ee6f-1967-4ac1-bdfd-c0c20e0fd3d8")
-	)
-	(wire
-		(pts
-			(xy 48.26 33.02) (xy 50.8 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e2ab22e-55b0-4f5f-8e98-5d1a9464ac69")
 	)
 	(wire
 		(pts
@@ -3095,7 +3260,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 31.75) (xy 74.93 38.1)
+			(xy 74.93 31.75) (xy 74.93 34.29)
 		)
 		(stroke
 			(width 0.3556)
@@ -3592,6 +3757,17 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 48.26) (xy 74.93 48.26)
+		)
+		(stroke
+			(width 0.3556)
+			(type default)
+			(color 194 0 194 1)
+		)
+		(uuid "7e8ef023-850e-49f3-a587-83e172c331dd")
+	)
+	(wire
+		(pts
 			(xy 194.31 72.39) (xy 194.31 80.01)
 		)
 		(stroke
@@ -3803,7 +3979,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 60.96) (xy 50.8 60.96)
+			(xy 43.18 60.96) (xy 48.26 60.96)
 		)
 		(stroke
 			(width 0)
@@ -4080,6 +4256,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 33.02) (xy 50.8 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3afbff5-570e-491e-bf3c-9895b128061f")
+	)
+	(wire
+		(pts
 			(xy 237.49 74.93) (xy 241.3 74.93)
 		)
 		(stroke
@@ -4261,6 +4447,17 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 62.23) (xy 74.93 66.04)
+		)
+		(stroke
+			(width 0.3556)
+			(type default)
+			(color 194 0 194 1)
+		)
+		(uuid "ae2c1e9a-d1ad-4e01-89c0-0ab88f5e6824")
+	)
+	(wire
+		(pts
 			(xy 241.3 74.93) (xy 241.3 72.39)
 		)
 		(stroke
@@ -4367,7 +4564,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 20.32) (xy 144.78 20.32)
+			(xy 74.93 20.32) (xy 88.9 20.32)
 		)
 		(stroke
 			(width 0.3556)
@@ -4375,6 +4572,17 @@
 			(color 194 0 194 1)
 		)
 		(uuid "b6198955-3453-4705-90f7-ff82ff0630e4")
+	)
+	(wire
+		(pts
+			(xy 115.57 81.28) (xy 123.19 81.28)
+		)
+		(stroke
+			(width 0.3556)
+			(type default)
+			(color 194 0 194 1)
+		)
+		(uuid "b87ab3cd-9ad3-4194-bc88-42a18c46349d")
 	)
 	(wire
 		(pts
@@ -4526,6 +4734,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 60.96) (xy 50.8 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2b89530-d458-481e-bf70-5c38dd8d0202")
+	)
+	(wire
+		(pts
 			(xy 57.15 114.3) (xy 54.61 114.3)
 		)
 		(stroke
@@ -4641,6 +4859,17 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 20.32) (xy 144.78 20.32)
+		)
+		(stroke
+			(width 0.3556)
+			(type default)
+			(color 194 0 194 1)
+		)
+		(uuid "cb2b01a1-3d39-4128-af0e-f0a079736e6e")
+	)
+	(wire
+		(pts
 			(xy 27.94 39.37) (xy 33.02 39.37)
 		)
 		(stroke
@@ -4651,7 +4880,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 59.69) (xy 74.93 66.04)
+			(xy 74.93 59.69) (xy 74.93 62.23)
 		)
 		(stroke
 			(width 0.3556)
@@ -4966,7 +5195,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 81.28) (xy 123.19 81.28)
+			(xy 74.93 81.28) (xy 115.57 81.28)
 		)
 		(stroke
 			(width 0.3556)
@@ -5004,6 +5233,17 @@
 			(type default)
 		)
 		(uuid "eb1658d9-ebc2-4dc3-92f8-eadfc82661cb")
+	)
+	(wire
+		(pts
+			(xy 74.93 34.29) (xy 74.93 38.1)
+		)
+		(stroke
+			(width 0.3556)
+			(type default)
+			(color 194 0 194 1)
+		)
+		(uuid "eb819c0b-ae8f-4afc-bec4-a3b852dfff79")
 	)
 	(wire
 		(pts
@@ -5463,7 +5703,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 74.93 69.85 0)
+		(at 170.18 59.69 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5471,171 +5711,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "0d8bd84c-aacd-421c-a2c6-56f6d376c4b4")
-		(property "Reference" "R24"
-			(at 77.47 69.85 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5R 1% 0.4W"
-			(at 77.47 67.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
-			(at 73.152 69.85 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 74.93 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d2b838df-efcb-4d9e-b53b-98918f3880dc")
-		)
-		(pin "1"
-			(uuid "d3b8ade2-2b2c-42f0-b3a2-e3910ab6743e")
-		)
-		(instances
-			(project "PCB"
-				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 233.68 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "107af65a-2dc6-48ff-9932-19bd65e3ddef")
-		(property "Reference" "R37"
-			(at 227.33 68.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1k 1% 250 mW"
-			(at 218.44 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
-			(at 231.902 69.85 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 233.68 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 233.68 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "a7b16466-0d19-4004-b91a-12ef210d725c")
-		)
-		(pin "1"
-			(uuid "62bf2bee-d0ed-4ab3-ad81-9979917cdceb")
-		)
-		(instances
-			(project "PCB"
-				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 173.99 31.75 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1113ab2a-be75-4d3f-bad2-2713c5f1c07e")
-		(property "Reference" "R32"
-			(at 177.8 34.29 90)
+		(uuid "01b75147-7968-4f9e-8ac0-d947fb6b4ace")
+		(property "Reference" "R29"
+			(at 173.99 62.23 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5645,7 +5723,7 @@
 			)
 		)
 		(property "Value" "7R5 1% 1/2W"
-			(at 173.99 29.21 90)
+			(at 170.18 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5654,8 +5732,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 173.99 33.528 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 170.18 61.468 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5665,8 +5743,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 173.99 31.75 0)
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+			(at 170.18 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5677,7 +5755,18 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 173.99 31.75 0)
+			(at 170.18 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" "CRCW08057R50FKEAHP"
+			(at 170.18 59.69 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5688,15 +5777,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "f38cd108-4acd-400d-a2ca-894c1ec6825e")
+			(uuid "365b12ac-c4e3-4a4a-8199-a10122225ba2")
 		)
 		(pin "1"
-			(uuid "2415b43b-493c-4840-9e6e-4db02c7f174b")
+			(uuid "2c08cf1a-dc17-4b03-8284-9ca719299759")
 		)
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R32")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -5714,7 +5803,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "183c6c14-ffba-45b2-b5f4-eb6765e7d695")
-		(property "Reference" "C69"
+		(property "Reference" "C67"
 			(at 81.28 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5789,7 +5878,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "C69")
+					(reference "C67")
 					(unit 1)
 				)
 			)
@@ -5827,7 +5916,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
 			(at 187.96 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -5887,7 +5976,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b1286ce-b85a-416e-ba8e-2f1290eefb78")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR021"
 			(at 17.78 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -5948,7 +6037,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "#PWR024")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -5966,7 +6055,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1ed840ea-5753-4e2e-aed5-dbae1183e12e")
-		(property "Reference" "C80"
+		(property "Reference" "C78"
 			(at 266.7 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6041,7 +6130,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "C80")
+					(reference "C78")
 					(unit 1)
 				)
 			)
@@ -6058,7 +6147,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "23c2893b-b2a7-427f-adef-3339654903c1")
-		(property "Reference" "R29"
+		(property "Reference" "R27"
 			(at 100.33 143.51 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6080,7 +6169,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 96.012 144.78 90)
 			(hide yes)
 			(show_name no)
@@ -6091,7 +6180,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 97.79 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -6113,6 +6202,17 @@
 				)
 			)
 		)
+		(property "model" "RCS060322K0FKEA"
+			(at 97.79 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a2c1b7da-29b7-464d-b45e-aa5698b54a7e")
 		)
@@ -6122,7 +6222,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R29")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -6140,7 +6240,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24dd35df-4e16-4178-98dc-d1992a890b74")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR024"
 			(at 153.67 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -6201,7 +6301,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "#PWR025")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -6312,7 +6412,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "291ec766-bc0c-4282-ab2f-08a8b697f3aa")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR025"
 			(at 237.49 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6373,88 +6473,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "#PWR068")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 233.68 52.07 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2ac39d25-5e77-41fd-8fe6-9ebf5b1a09fb")
-		(property "Reference" "R36"
-			(at 236.22 50.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22k 1% 250 mW"
-			(at 236.22 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
-			(at 231.902 52.07 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 233.68 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 233.68 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "bb54a76c-ecde-4cc1-91ba-7b945373b5a2")
-		)
-		(pin "1"
-			(uuid "1e408146-9edf-4964-a43d-ae3e47947461")
-		)
-		(instances
-			(project "PCB"
-				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R36")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -6492,7 +6511,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
 			(at 52.07 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -6551,7 +6570,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "32ecba0f-c7e5-407f-891c-e43c1f667b9e")
-		(property "Reference" "C72"
+		(property "Reference" "C77"
 			(at 236.22 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6626,7 +6645,100 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "C72")
+					(reference "C77")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 74.93 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3500c7ad-e37a-4629-b936-cb92da54cd1c")
+		(property "Reference" "R23"
+			(at 77.47 118.1099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5R 1% 0.4W"
+			(at 77.47 120.6499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 73.152 119.38 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-csrt.pdf"
+			(at 74.93 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 74.93 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" "CSRT0603FT5R00"
+			(at 74.93 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f09ce054-ac18-4163-9943-9846d89c3d0f")
+		)
+		(pin "1"
+			(uuid "47816b36-c877-4832-90a5-f6a201bb24ea")
+		)
+		(instances
+			(project "PCB"
+				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -6643,7 +6755,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "383183e8-7e80-434c-8bd9-b9cd922459bb")
-		(property "Reference" "D5"
+		(property "Reference" "D4"
 			(at 34.29 156.21 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6705,7 +6817,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "D5")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -6743,7 +6855,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
 			(at 49.53 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -6793,7 +6905,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 97.79 162.56 0)
+		(at 74.93 161.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6801,9 +6913,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "40eb9c21-ef18-439d-a9af-21e5e0661859")
-		(property "Reference" "R30"
-			(at 92.71 160.02 0)
+		(fields_autoplaced yes)
+		(uuid "3f8ca245-b473-46fa-a247-fef8d553a9c7")
+		(property "Reference" "R24"
+			(at 77.47 160.0199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6813,8 +6926,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k 1% 250 mW"
-			(at 82.55 166.37 0)
+		(property "Value" "5R 1% 0.4W"
+			(at 77.47 162.5599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6824,8 +6937,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
-			(at 96.012 162.56 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 73.152 161.29 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6835,8 +6948,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 97.79 162.56 0)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-csrt.pdf"
+			(at 74.93 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6847,7 +6960,18 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 97.79 162.56 0)
+			(at 74.93 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" "CSRT0603FT5R00"
+			(at 74.93 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6858,15 +6982,107 @@
 			)
 		)
 		(pin "2"
-			(uuid "51284940-aef3-4b9e-9cd2-1f42e00f01f5")
+			(uuid "190886a7-fd0d-4914-bb09-5ef96236fef0")
 		)
 		(pin "1"
-			(uuid "f22adcbd-3c17-4c3c-b341-af436dce8d9b")
+			(uuid "9f307509-3faa-4c6d-aa59-76c8f7a6e8a7")
 		)
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R30")
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 97.79 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "465d9509-b448-494a-a3d6-f289f9e5620e")
+		(property "Reference" "R60"
+			(at 100.33 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22k 1% 250 mW"
+			(at 100.33 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 96.012 53.34 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
+			(at 97.79 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 97.79 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" "RCS060322K0FKEA"
+			(at 97.79 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "15125ae3-2b61-4e0e-abe4-8c1632f677c3")
+		)
+		(pin "1"
+			(uuid "3b2dba1f-2773-4975-a31c-3ac6333e1841")
+		)
+		(instances
+			(project "PCB"
+				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
+					(reference "R60")
 					(unit 1)
 				)
 			)
@@ -6966,85 +7182,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 34.29 152.4 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "49c2639b-92fd-41e3-815a-abfeafb1569a")
-		(property "Reference" "R18"
-			(at 39.37 153.67 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "7R5 1% 1/2W"
-			(at 34.29 149.86 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 34.29 154.178 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.29 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 34.29 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d7359d01-1543-4130-8cbd-4f239db9ec10")
-		)
-		(pin "1"
-			(uuid "5c0253ea-68f6-4da4-827e-30a3da0484b0")
-		)
-		(instances
-			(project "PCB"
-				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 44.45 177.8 0)
 		(unit 1)
@@ -7055,7 +7192,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4e31a7cc-9cf2-4885-8ea9-9e240ccd17cc")
-		(property "Reference" "C65"
+		(property "Reference" "C63"
 			(at 38.1 176.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7130,7 +7267,86 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "C65")
+					(reference "C63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 74.93 34.29 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4fab3943-8837-42d9-bfd5-644d670e8a3c")
+		(property "Reference" "TP52"
+			(at 80.01 34.29 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 80.01 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 74.93 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 74.93 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d0ff6950-acfd-4934-bfb6-d349ce9a91aa")
+		)
+		(instances
+			(project "PCB"
+				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
+					(reference "TP52")
 					(unit 1)
 				)
 			)
@@ -7148,7 +7364,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "556dfac1-47e9-4526-a821-300a330446af")
-		(property "Reference" "C78"
+		(property "Reference" "C76"
 			(at 209.55 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7223,7 +7439,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "C78")
+					(reference "C76")
 					(unit 1)
 				)
 			)
@@ -7240,7 +7456,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5de6f005-78e2-402b-af4a-3f750d16ddc4")
-		(property "Reference" "D8"
+		(property "Reference" "D7"
 			(at 44.45 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7302,7 +7518,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "D8")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -7319,7 +7535,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5eed13bf-5bc4-4977-bbd3-5910f7ec3013")
-		(property "Reference" "Q8"
+		(property "Reference" "Q6"
 			(at 198.12 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7341,7 +7557,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:Q_DSOPADVANCE_2-5S1A_TOS"
+		(property "Footprint" "Library:SOT95P237X112-3N"
 			(at 196.85 33.655 0)
 			(hide yes)
 			(show_name no)
@@ -7404,7 +7620,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "Q8")
+					(reference "Q6")
 					(unit 1)
 				)
 			)
@@ -7442,7 +7658,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
 			(at 49.53 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -7501,7 +7717,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "67ca802f-55dc-4630-8b12-3e5322934382")
-		(property "Reference" "C64"
+		(property "Reference" "C62"
 			(at 38.1 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7576,7 +7792,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "C64")
+					(reference "C62")
 					(unit 1)
 				)
 			)
@@ -7594,7 +7810,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6a33561b-8de2-4f9b-a904-0e58953468c1")
-		(property "Reference" "C68"
+		(property "Reference" "C66"
 			(at 73.66 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7669,7 +7885,86 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "C68")
+					(reference "C66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 49.53 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6baedf51-c345-4dbc-ad0a-fe4317da7cdd")
+		(property "Reference" "TP50"
+			(at 50.8 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 50.8 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 54.61 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 49.53 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "96c07f56-1634-4572-9e77-bd2c3a393d42")
+		)
+		(instances
+			(project "PCB"
+				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
+					(reference "TP50")
 					(unit 1)
 				)
 			)
@@ -7686,7 +7981,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7332b72f-15bd-4a1b-9c76-cad0f2bf801b")
-		(property "Reference" "C75"
+		(property "Reference" "C73"
 			(at 139.7 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7761,7 +8056,99 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "C75")
+					(reference "C73")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 97.79 162.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "778b190f-77ed-4c6f-8afd-61e23ef9f37f")
+		(property "Reference" "R28"
+			(at 92.71 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k 1% 250 mW"
+			(at 81.28 166.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 96.012 162.56 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.rohm.com/products/resistors/high-reliability-resistors/anti-surge-chip-resistors/esr03ezpf-product"
+			(at 97.79 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 97.79 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" " ESR03EZPF1001"
+			(at 97.79 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2d8f5088-491d-4c61-b6fb-685084cb918f")
+		)
+		(pin "1"
+			(uuid "4e4be9d3-6f89-4665-b749-06d5fd02f07f")
+		)
+		(instances
+			(project "PCB"
+				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -7800,7 +8187,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:Q_DSOPADVANCE_2-5S1A_TOS"
+		(property "Footprint" "Library:SOT95P237X112-3N"
 			(at 196.85 64.135 0)
 			(hide yes)
 			(show_name no)
@@ -7880,7 +8267,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7940040c-d830-4120-991e-9c5fe64c05d6")
-		(property "Reference" "C17"
+		(property "Reference" "C68"
 			(at 100.33 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7955,15 +8342,15 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "C17")
+					(reference "C68")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 97.79 53.34 0)
+		(lib_id "Connector:TestPoint")
+		(at 88.9 20.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7971,9 +8358,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "847a9ef3-8810-4ef4-8146-9b6040c9a8f1")
-		(property "Reference" "R27"
-			(at 100.33 52.07 0)
+		(uuid "7c88b8f1-2b39-438e-85e1-26b8717318b9")
+		(property "Reference" "TP54"
+			(at 91.44 16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7983,8 +8370,9 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22k 1% 250 mW"
-			(at 100.33 54.61 0)
+		(property "Value" "TestPoint"
+			(at 90.17 15.24 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7994,8 +8382,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
-			(at 96.012 53.34 90)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 93.98 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8006,7 +8394,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 97.79 53.34 0)
+			(at 93.98 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8016,8 +8404,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 97.79 53.34 0)
+		(property "Description" "test point"
+			(at 88.9 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8026,17 +8414,14 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "30476eb2-bd1e-47cf-8c00-7b81c89894d1")
 		)
 		(pin "1"
-			(uuid "166ac285-46c2-4b75-b6a9-363584e97f3c")
+			(uuid "f2dc3e21-ab8d-4fe5-b1ae-21b1de52c955")
 		)
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R27")
+					(reference "TP54")
 					(unit 1)
 				)
 			)
@@ -8053,7 +8438,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "86360f9c-1666-4fb9-8c78-b2f45dc3bd0e")
-		(property "Reference" "D7"
+		(property "Reference" "D6"
 			(at 36.83 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8115,7 +8500,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "D7")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -8133,7 +8518,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "883124dd-adb6-44d2-a6b1-0da4755920a5")
-		(property "Reference" "C77"
+		(property "Reference" "C75"
 			(at 209.55 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8208,7 +8593,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "C77")
+					(reference "C75")
 					(unit 1)
 				)
 			)
@@ -8225,7 +8610,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8ae3366f-4c3d-4706-8070-87a6e3b3a6cf")
-		(property "Reference" "D6"
+		(property "Reference" "D5"
 			(at 36.83 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8287,88 +8672,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "D6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 210.82 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "90d575d3-9edc-4937-b500-b4956d4cafb3")
-		(property "Reference" "R35"
-			(at 204.47 67.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5R 1% 0.4W"
-			(at 198.12 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
-			(at 209.042 68.58 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 210.82 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "e5d06826-c711-4db2-95df-6166b06307ce")
-		)
-		(pin "1"
-			(uuid "4cb5c325-3588-41cd-bb6a-987ebcc03382")
-		)
-		(instances
-			(project "PCB"
-				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R35")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -8385,7 +8689,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "912d81f0-7e08-4841-9a6f-03abc10438ca")
-		(property "Reference" "C76"
+		(property "Reference" "C74"
 			(at 173.99 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8460,7 +8764,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "C76")
+					(reference "C74")
 					(unit 1)
 				)
 			)
@@ -8477,7 +8781,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "92c31544-7751-45ee-a791-6a041fe94c34")
-		(property "Reference" "D10"
+		(property "Reference" "D9"
 			(at 170.18 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8539,7 +8843,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "D10")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -8557,7 +8861,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "945f5456-8e3f-4331-9eb1-b358ae204a70")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR020"
 			(at 17.78 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -8618,7 +8922,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "#PWR023")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -8635,7 +8939,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "95e17e92-d7d7-4ade-88e6-1ca8bd6dd8c3")
-		(property "Reference" "R19"
+		(property "Reference" "R17"
 			(at 41.91 35.56 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8655,7 +8959,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 38.1 34.798 90)
 			(hide yes)
 			(show_name no)
@@ -8666,7 +8970,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 			(at 38.1 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -8688,6 +8992,17 @@
 				)
 			)
 		)
+		(property "model" "CRCW08057R50FKEAHP"
+			(at 38.1 33.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "bb4e2873-fa90-4570-b538-8232720c89eb")
 		)
@@ -8697,7 +9012,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R19")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -8714,7 +9029,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9732f4a4-722b-4e93-bcbc-4bd7ff034f67")
-		(property "Reference" "Q5"
+		(property "Reference" "Q4"
 			(at 62.23 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8736,7 +9051,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:Q_DSOPADVANCE_2-5S1A_TOS"
+		(property "Footprint" "Library:SOT95P237X112-3N"
 			(at 60.96 126.365 0)
 			(hide yes)
 			(show_name no)
@@ -8799,7 +9114,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "Q5")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -8816,7 +9131,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "97aa7cdd-1bbd-43ac-b4a2-7b8e0075e979")
-		(property "Reference" "C21"
+		(property "Reference" "C69"
 			(at 100.33 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8891,7 +9206,97 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "C21")
+					(reference "C69")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 38.1 124.46 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9969a65d-03f4-4d7a-917d-09d8ede0601a")
+		(property "Reference" "R18"
+			(at 41.91 127 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "7R5 1% 1/2W"
+			(at 38.1 121.92 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 38.1 126.238 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+			(at 38.1 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 38.1 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" "CRCW08057R50FKEAHP"
+			(at 38.1 124.46 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7a2c9817-6ae1-42ab-9083-e2615accff51")
+		)
+		(pin "1"
+			(uuid "3ca0e5a7-a951-412f-9da0-799b860eb295")
+		)
+		(instances
+			(project "PCB"
+				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -8909,7 +9314,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9bc806de-3349-4799-b875-e671718a3c7b")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR023"
 			(at 101.6 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -8970,7 +9375,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "#PWR067")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -9008,7 +9413,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
 			(at 52.07 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -9067,7 +9472,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a3f5d2a2-6b71-4f6b-a296-da4f87eaf314")
-		(property "Reference" "D4"
+		(property "Reference" "D3"
 			(at 34.29 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9129,7 +9534,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "D4")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -9147,7 +9552,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4869035-3faf-4898-8dee-eb7c69bb6594")
-		(property "Reference" "R21"
+		(property "Reference" "R19"
 			(at 60.96 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9158,7 +9563,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0m5 1% 5W"
+		(property "Value" "0m5 1% 2W"
 			(at 60.96 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9169,7 +9574,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 56.642 86.36 90)
 			(hide yes)
 			(show_name no)
@@ -9180,7 +9585,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/files/catalog/SEI-HCS.pdf"
 			(at 58.42 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -9202,6 +9607,17 @@
 				)
 			)
 		)
+		(property "model" "HCS1206FTL500"
+			(at 58.42 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6955bd60-10c4-41ba-95ef-64e65bdc43cb")
 		)
@@ -9211,7 +9627,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R21")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -9228,7 +9644,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a67bc1f1-db39-4d5b-9aac-062d81bec708")
-		(property "Reference" "D12"
+		(property "Reference" "D11"
 			(at 180.34 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9290,7 +9706,86 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "D12")
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 115.57 81.28 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a9528292-c0ac-4120-94ee-fa29d7bec71a")
+		(property "Reference" "TP55"
+			(at 113.03 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 114.3 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 110.49 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c261dc02-4156-4071-a4c8-e54b3a7aa2a5")
+		)
+		(instances
+			(project "PCB"
+				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
+					(reference "TP55")
 					(unit 1)
 				)
 			)
@@ -9308,7 +9803,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9ff34c1-338a-4691-bafc-09940fc0c144")
-		(property "Reference" "R22"
+		(property "Reference" "R20"
 			(at 60.96 176.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9319,7 +9814,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0m5 1% 5W"
+		(property "Value" "0m5 1% 2W"
 			(at 60.96 179.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9330,7 +9825,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 56.642 177.8 90)
 			(hide yes)
 			(show_name no)
@@ -9341,7 +9836,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/products/Resistors/part/RC0603FR-075K1L"
 			(at 58.42 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -9353,6 +9848,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 58.42 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" "HCS1206FTL500"
 			(at 58.42 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -9372,15 +9878,15 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R22")
+					(reference "R20")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 210.82 26.67 0)
+		(lib_id "Connector:TestPoint")
+		(at 69.85 48.26 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9388,9 +9894,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "ade2886e-0c0c-4799-ae61-f05f366bcce7")
-		(property "Reference" "R34"
-			(at 214.63 25.4 0)
+		(uuid "af4f8cce-5631-46a4-90be-271314e49ea5")
+		(property "Reference" "TP51"
+			(at 67.31 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9400,8 +9906,9 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5R 1% 0.4W"
-			(at 214.63 27.94 0)
+		(property "Value" "TestPoint"
+			(at 68.58 53.34 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9411,8 +9918,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
-			(at 209.042 26.67 90)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 64.77 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9423,7 +9930,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 210.82 26.67 0)
+			(at 64.77 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9433,8 +9940,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 210.82 26.67 0)
+		(property "Description" "test point"
+			(at 69.85 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9443,17 +9950,14 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "3c381793-607a-4429-ab0f-b9041fe42bcc")
 		)
 		(pin "1"
-			(uuid "e12f3b7b-0237-4311-a7eb-b1bf04995f52")
+			(uuid "104834d7-fce4-4c70-98bf-5a313e0d3504")
 		)
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R34")
+					(reference "TP51")
 					(unit 1)
 				)
 			)
@@ -9491,7 +9995,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
 			(at 185.42 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -9541,7 +10045,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 170.18 59.69 90)
+		(at 173.99 31.75 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9549,9 +10053,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "b79a14d0-1a6f-4770-a954-6ce9eea6c99c")
-		(property "Reference" "R31"
-			(at 175.26 60.96 90)
+		(uuid "b48a3947-2e33-4f40-998b-84203d45152b")
+		(property "Reference" "R30"
+			(at 177.8 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9561,7 +10065,7 @@
 			)
 		)
 		(property "Value" "7R5 1% 1/2W"
-			(at 170.18 57.15 90)
+			(at 173.99 29.21 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9570,8 +10074,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 170.18 61.468 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 173.99 33.528 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9581,8 +10085,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 170.18 59.69 0)
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+			(at 173.99 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9593,7 +10097,18 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 170.18 59.69 0)
+			(at 173.99 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" "CRCW08057R50FKEAHP"
+			(at 173.99 31.75 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9604,15 +10119,107 @@
 			)
 		)
 		(pin "2"
-			(uuid "dec8a0a0-cbf5-42d9-9c54-5ef53ed861d5")
+			(uuid "861309f7-6640-4ee8-b9d1-22b8aa177998")
 		)
 		(pin "1"
-			(uuid "a5d9046a-ee8d-44ce-9b25-e8a9ed263e4a")
+			(uuid "0a2fff9c-beca-4d6d-9222-0f42c3db7a23")
 		)
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R31")
+					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 233.68 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b4c26a1c-45d3-4057-bbd6-b8ab066309f0")
+		(property "Reference" "R35"
+			(at 228.6 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k 1% 250 mW"
+			(at 217.17 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 231.902 69.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.rohm.com/products/resistors/high-reliability-resistors/anti-surge-chip-resistors/esr03ezpf-product"
+			(at 233.68 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 233.68 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" " ESR03EZPF1001"
+			(at 233.68 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "baa22e85-bbf7-47d7-8f4f-a5c96c7cf04d")
+		)
+		(pin "1"
+			(uuid "fb398db6-d268-401a-b634-54eaa77a44a3")
+		)
+		(instances
+			(project "PCB"
+				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -9629,7 +10236,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bcf8b760-6524-4853-8c74-4e739d39404d")
-		(property "Reference" "C81"
+		(property "Reference" "C79"
 			(at 274.32 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9704,89 +10311,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "C81")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 74.93 119.38 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bfaf3437-b7f2-4776-8e5b-62e31a3c14d1")
-		(property "Reference" "R25"
-			(at 77.47 118.1099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5R 1% 0.4W"
-			(at 77.47 120.6499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
-			(at 73.152 119.38 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 74.93 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "34f17d9d-a4c6-44e5-a065-7175ac889f2b")
-		)
-		(pin "1"
-			(uuid "ba1c5f29-ce0e-4672-a8cd-25a896bb24f6")
-		)
-		(instances
-			(project "PCB"
-				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R25")
+					(reference "C79")
 					(unit 1)
 				)
 			)
@@ -9803,7 +10328,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c248914e-2922-42cb-9bea-82a018f351ad")
-		(property "Reference" "R28"
+		(property "Reference" "R26"
 			(at 92.71 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9825,7 +10350,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 96.012 71.12 90)
 			(hide yes)
 			(show_name no)
@@ -9836,7 +10361,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.rohm.com/products/resistors/high-reliability-resistors/anti-surge-chip-resistors/esr03ezpf-product"
 			(at 97.79 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -9858,6 +10383,17 @@
 				)
 			)
 		)
+		(property "model" " ESR03EZPF1001"
+			(at 97.79 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c3d3d3ac-3dcb-4e7b-8c8a-098634591fca")
 		)
@@ -9867,7 +10403,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R28")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -9885,7 +10421,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c5281730-332e-435e-92f7-5a3f7a80519f")
-		(property "Reference" "R23"
+		(property "Reference" "R21"
 			(at 77.47 26.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9907,7 +10443,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 73.152 27.94 90)
 			(hide yes)
 			(show_name no)
@@ -9918,7 +10454,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-csrt.pdf"
 			(at 74.93 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -9930,6 +10466,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 74.93 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" "CSRT0603FT5R00"
 			(at 74.93 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -9949,7 +10496,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R23")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -9957,7 +10504,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 38.1 124.46 90)
+		(at 210.82 26.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9965,88 +10512,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "cb9c69bc-9a14-4f61-8ea4-82ff46bba668")
-		(property "Reference" "R20"
-			(at 41.91 127 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "7R5 1% 1/2W"
-			(at 38.1 121.92 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 38.1 126.238 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 38.1 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "3e2137f0-cdd3-4c11-bffd-67f2b4d4d471")
-		)
-		(pin "1"
-			(uuid "4a4318ad-bad6-4ef6-8c13-cebc82ae71d9")
-		)
-		(instances
-			(project "PCB"
-				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 74.93 161.29 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d075ee48-fb93-4b38-8638-f9cba53f2a7c")
-		(property "Reference" "R26"
-			(at 77.47 160.02 0)
+		(fields_autoplaced yes)
+		(uuid "c5d109e7-c78e-494a-96d4-9f2a221ce180")
+		(property "Reference" "R32"
+			(at 213.36 25.3999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10057,7 +10526,7 @@
 			)
 		)
 		(property "Value" "5R 1% 0.4W"
-			(at 77.47 162.56 0)
+			(at 213.36 27.9399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10067,8 +10536,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
-			(at 73.152 161.29 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 209.042 26.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10078,8 +10547,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 74.93 161.29 0)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-csrt.pdf"
+			(at 210.82 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10090,7 +10559,18 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 74.93 161.29 0)
+			(at 210.82 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" "CSRT0603FT5R00"
+			(at 210.82 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10101,15 +10581,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "aedc3f65-324a-4d3d-9e2c-d2afd1d221c6")
+			(uuid "74e18847-71ac-4857-a0d2-3da95d9acb24")
 		)
 		(pin "1"
-			(uuid "da01361f-d88c-452a-8ae8-2498bc561ff1")
+			(uuid "2067013a-8907-4939-a9b6-9f012fe1cca3")
 		)
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R26")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -10125,9 +10605,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "d6c5e542-ee0d-4541-9ee6-93ed9ad0cbbd")
-		(property "Reference" "R17"
-			(at 39.37 62.23 90)
+		(uuid "cb02d3f8-c16e-49ce-b4ae-23bab081c5ea")
+		(property "Reference" "R58"
+			(at 38.1 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10146,7 +10626,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 34.29 62.738 90)
 			(hide yes)
 			(show_name no)
@@ -10157,7 +10637,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 			(at 34.29 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -10179,16 +10659,209 @@
 				)
 			)
 		)
+		(property "model" "CRCW08057R50FKEAHP"
+			(at 34.29 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
-			(uuid "eae10831-53bc-4ccb-bdf2-f2fbdebd8453")
+			(uuid "68dd5523-1d3c-4e0d-932d-4ea97e3238bf")
 		)
 		(pin "1"
-			(uuid "8d271129-e42c-4c75-a3ef-9fc7d8eb546b")
+			(uuid "0a342404-4a40-4362-b271-e1470b957fef")
 		)
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "R17")
+					(reference "R58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 233.68 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cfc41cb8-3a49-49ba-b15c-360efeea3525")
+		(property "Reference" "R34"
+			(at 236.22 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22k 1% 250 mW"
+			(at 236.22 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 231.902 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
+			(at 233.68 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 233.68 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" "RCS060322K0FKEA"
+			(at 233.68 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "32934e98-b6ec-4727-aa3d-450b843cc821")
+		)
+		(pin "1"
+			(uuid "6208f79b-c4ea-458e-910e-9fdd3663db5d")
+		)
+		(instances
+			(project "PCB"
+				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
+					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 34.29 152.4 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d987e5f5-6a41-431b-9ab7-cf4c24833210")
+		(property "Reference" "R59"
+			(at 38.1 154.94 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "7R5 1% 1/2W"
+			(at 34.29 149.86 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 34.29 154.178 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+			(at 34.29 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 34.29 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" "CRCW08057R50FKEAHP"
+			(at 34.29 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "180e2f19-9817-48ae-9dc2-c130969f2900")
+		)
+		(pin "1"
+			(uuid "7dddb681-1429-42b2-97f2-eefb188f67da")
+		)
+		(instances
+			(project "PCB"
+				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
+					(reference "R59")
 					(unit 1)
 				)
 			)
@@ -10205,7 +10878,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d9a77a47-e075-4e7c-b7d6-ca6f0a5b17d2")
-		(property "Reference" "Q3"
+		(property "Reference" "Q2"
 			(at 62.23 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10227,7 +10900,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:Q_DSOPADVANCE_2-5S1A_TOS"
+		(property "Footprint" "Library:SOT95P237X112-3N"
 			(at 60.96 34.925 0)
 			(hide yes)
 			(show_name no)
@@ -10290,7 +10963,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "Q3")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -10308,7 +10981,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dcdf02c4-1106-48c3-8ee9-b3bb819cd0b7")
-		(property "Reference" "R33"
+		(property "Reference" "R31"
 			(at 196.85 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10319,7 +10992,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0m5 1% 5W"
+		(property "Value" "0m5 1% 2W"
 			(at 196.85 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10330,7 +11003,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 192.532 86.36 90)
 			(hide yes)
 			(show_name no)
@@ -10341,7 +11014,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/products/Resistors/part/RC0603FR-075K1L"
 			(at 194.31 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -10363,11 +11036,114 @@
 				)
 			)
 		)
+		(property "model" "HCS1206FTL500"
+			(at 194.31 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "fbb7b417-0e74-4561-804b-a9494a2df2d9")
 		)
 		(pin "1"
 			(uuid "ba1e8807-36f8-42f5-9728-a545da91c9e9")
+		)
+		(instances
+			(project "PCB"
+				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 210.82 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "de52fc4d-dc50-4750-8bda-c3007cb79aca")
+		(property "Reference" "R33"
+			(at 204.47 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5R 1% 0.4W"
+			(at 198.12 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 209.042 68.58 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-csrt.pdf"
+			(at 210.82 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 210.82 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" "CSRT0603FT5R00"
+			(at 210.82 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "963ba831-ec5b-49df-aad1-a2332999b49c")
+		)
+		(pin "1"
+			(uuid "4b420f98-1bab-46ca-b036-6ceee97be087")
 		)
 		(instances
 			(project "PCB"
@@ -10390,7 +11166,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3b20785-0f85-42d2-b646-b3fe9b9c24da")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR022"
 			(at 101.6 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -10451,7 +11227,86 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "#PWR066")
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 48.26 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e9225c0c-c5c6-46f3-be26-254dbadbe8c0")
+		(property "Reference" "TP49"
+			(at 49.53 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 49.53 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 53.34 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 48.26 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "516563b6-788b-45a6-ab68-e3bec6d8ebfc")
+		)
+		(instances
+			(project "PCB"
+				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
+					(reference "TP49")
 					(unit 1)
 				)
 			)
@@ -10468,7 +11323,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ea16492d-60d1-4a0e-b2bb-adceb8bc6a70")
-		(property "Reference" "Q6"
+		(property "Reference" "Q5"
 			(at 62.23 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10490,7 +11345,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:Q_DSOPADVANCE_2-5S1A_TOS"
+		(property "Footprint" "Library:SOT95P237X112-3N"
 			(at 60.96 156.845 0)
 			(hide yes)
 			(show_name no)
@@ -10553,7 +11408,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "Q6")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -10571,7 +11426,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ee676ae7-ec71-49ca-9973-0d2b0e4fc766")
-		(property "Reference" "C66"
+		(property "Reference" "C64"
 			(at 73.66 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10646,7 +11501,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "C66")
+					(reference "C64")
 					(unit 1)
 				)
 			)
@@ -10663,8 +11518,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ef219375-3428-4c44-ba78-b704d2d702e1")
-		(property "Reference" "Q4"
-			(at 62.23 62.23 0)
+		(property "Reference" "Q3"
+			(at 60.96 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10685,7 +11540,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:Q_DSOPADVANCE_2-5S1A_TOS"
+		(property "Footprint" "Library:SOT95P237X112-3N"
 			(at 60.96 65.405 0)
 			(hide yes)
 			(show_name no)
@@ -10748,7 +11603,179 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "Q4")
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 74.93 62.23 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "efb7af75-d10d-42bd-ac2b-e5fb342d120a")
+		(property "Reference" "TP53"
+			(at 69.85 62.23 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 69.85 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 74.93 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 74.93 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1796c7fe-54af-48b9-b91d-11e7d4946da4")
+		)
+		(instances
+			(project "PCB"
+				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
+					(reference "TP53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 74.93 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1aaa9bd-3ab0-4380-b965-fcb05193c0f8")
+		(property "Reference" "R22"
+			(at 77.47 68.5799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5R 1% 0.4W"
+			(at 77.47 71.1199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 73.152 69.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-csrt.pdf"
+			(at 74.93 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 74.93 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" "CSRT0603FT5R00"
+			(at 74.93 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "32deb8d4-c4ec-4556-a98a-4cc1452b86f7")
+		)
+		(pin "1"
+			(uuid "333e35fa-65d1-4774-a7dd-5231b095b18e")
+		)
+		(instances
+			(project "PCB"
+				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -10765,7 +11792,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f535bed2-3571-4a64-a37a-546760bc0c54")
-		(property "Reference" "C74"
+		(property "Reference" "C72"
 			(at 139.7 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10840,7 +11867,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "C74")
+					(reference "C72")
 					(unit 1)
 				)
 			)
@@ -10857,7 +11884,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f67f4835-a7d6-4f2b-a2e3-0c253eadaee1")
-		(property "Reference" "D9"
+		(property "Reference" "D8"
 			(at 44.45 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10919,7 +11946,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "D9")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -10937,7 +11964,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fd87a11f-3972-4be4-bd42-2605ef9588f4")
-		(property "Reference" "C67"
+		(property "Reference" "C65"
 			(at 82.55 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11012,7 +12039,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "C67")
+					(reference "C65")
 					(unit 1)
 				)
 			)
@@ -11029,7 +12056,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fd958a0f-7ac9-478e-9927-ac15649062f0")
-		(property "Reference" "D11"
+		(property "Reference" "D10"
 			(at 172.72 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11091,7 +12118,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/3e09a497-7812-4aaa-9009-51e8b03d0291"
-					(reference "D11")
+					(reference "D10")
 					(unit 1)
 				)
 			)

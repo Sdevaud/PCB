@@ -7135,7 +7135,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00514b2a-5761-4902-9eb8-cf81b1c24821")
-		(property "Reference" "TP48"
+		(property "Reference" "TP43"
 			(at 31.75 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7158,7 +7158,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 26.67 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -7197,7 +7197,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "TP48")
+					(reference "TP43")
 					(unit 1)
 				)
 			)
@@ -7214,7 +7214,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0358f0e0-c645-4fd3-bc7b-8df4fd7da94e")
-		(property "Reference" "TP37"
+		(property "Reference" "TP32"
 			(at 31.75 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7237,7 +7237,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 26.67 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -7276,7 +7276,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "TP37")
+					(reference "TP32")
 					(unit 1)
 				)
 			)
@@ -7294,7 +7294,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b50a73b-0d4f-4ed4-a8e3-0934bced140d")
-		(property "Reference" "C62"
+		(property "Reference" "C60"
 			(at 200.66 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7369,7 +7369,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "C62")
+					(reference "C60")
 					(unit 1)
 				)
 			)
@@ -7387,7 +7387,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0cd4a4ff-0a11-497a-9e22-f2427043a051")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR012"
 			(at 152.4 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -7448,7 +7448,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "#PWR015")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -7466,7 +7466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ecb1afb-d4cc-4c2b-9495-5ca9f366f1c4")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR08"
 			(at 64.77 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -7527,7 +7527,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "#PWR011")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -7544,7 +7544,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "108e099f-fa02-482b-885e-90a3cbe6c94a")
-		(property "Reference" "R15"
+		(property "Reference" "R13"
 			(at 264.16 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7617,7 +7617,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "R15")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -7634,7 +7634,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "15ccdc49-244a-464f-9ce4-c365701b1ab5")
-		(property "Reference" "TP44"
+		(property "Reference" "TP39"
 			(at 31.75 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7657,7 +7657,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 26.67 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -7696,7 +7696,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "TP44")
+					(reference "TP39")
 					(unit 1)
 				)
 			)
@@ -7713,7 +7713,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2542c568-650d-42d7-beac-45c5f145d900")
-		(property "Reference" "C58"
+		(property "Reference" "C56"
 			(at 88.9 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7788,7 +7788,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "C58")
+					(reference "C56")
 					(unit 1)
 				)
 			)
@@ -7901,7 +7901,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28230319-0d48-4252-ba1c-930cd2d6a971")
-		(property "Reference" "C63"
+		(property "Reference" "C61"
 			(at 262.89 109.2199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7976,7 +7976,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "C63")
+					(reference "C61")
 					(unit 1)
 				)
 			)
@@ -7995,7 +7995,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b26819f-b3f1-42ba-b436-d1f9f1ac0234")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR07"
 			(at 31.75 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -8056,7 +8056,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "#PWR09")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -8074,7 +8074,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b836aa5-d284-49a8-8039-0bb7447741b3")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR017"
 			(at 255.27 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -8135,7 +8135,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "#PWR020")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -8152,7 +8152,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2e8252cf-499a-4056-ba58-8c0097819a30")
-		(property "Reference" "TP41"
+		(property "Reference" "TP36"
 			(at 31.75 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8175,7 +8175,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 26.67 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8214,7 +8214,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "TP41")
+					(reference "TP36")
 					(unit 1)
 				)
 			)
@@ -8232,7 +8232,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "35d52428-c37f-40d1-bceb-38824cd4cff4")
-		(property "Reference" "R6"
+		(property "Reference" "R7"
 			(at 76.2 180.3399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8307,7 +8307,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "R6")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -8324,7 +8324,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "36e64515-4bbc-4177-bf63-ff5b8af35413")
-		(property "Reference" "C57"
+		(property "Reference" "C55"
 			(at 96.52 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8399,7 +8399,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "C57")
+					(reference "C55")
 					(unit 1)
 				)
 			)
@@ -8416,7 +8416,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "37277fd7-0e78-4218-a5e7-d41fac452d3b")
-		(property "Reference" "TP51"
+		(property "Reference" "TP46"
 			(at 31.75 119.38 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8439,7 +8439,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 26.67 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -8478,7 +8478,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "TP51")
+					(reference "TP46")
 					(unit 1)
 				)
 			)
@@ -8496,7 +8496,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "386d758f-9b27-4691-90e7-dce0dd1c2218")
-		(property "Reference" "C61"
+		(property "Reference" "C59"
 			(at 175.26 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8571,7 +8571,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "C61")
+					(reference "C59")
 					(unit 1)
 				)
 			)
@@ -8589,7 +8589,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3cf50ad8-cbeb-4424-8870-494f3f38ebb2")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR014"
 			(at 210.82 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -8650,7 +8650,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "#PWR017")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -8668,7 +8668,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45cfaf39-13d4-4ab7-954e-c2a1694bf35a")
-		(property "Reference" "C59"
+		(property "Reference" "C57"
 			(at 106.68 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8743,7 +8743,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "C59")
+					(reference "C57")
 					(unit 1)
 				)
 			)
@@ -8760,7 +8760,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4cf9d10d-3fa3-47ea-a4c8-0878df3081ad")
-		(property "Reference" "TP53"
+		(property "Reference" "TP48"
 			(at 31.75 124.46 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8783,7 +8783,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 26.67 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -8822,7 +8822,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "TP53")
+					(reference "TP48")
 					(unit 1)
 				)
 			)
@@ -8928,7 +8928,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "536032f8-cc10-4d68-9c38-95cb47c68c4f")
-		(property "Reference" "TP36"
+		(property "Reference" "TP31"
 			(at 31.75 67.31 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8951,7 +8951,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 26.67 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -8990,7 +8990,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "TP36")
+					(reference "TP31")
 					(unit 1)
 				)
 			)
@@ -9008,7 +9008,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "55d28cc2-c130-40f6-b8a7-d38ac13c5ad8")
-		(property "Reference" "R8"
+		(property "Reference" "R9"
 			(at 97.79 146.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9083,7 +9083,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "R8")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -9180,7 +9180,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6168a9d6-834f-47f6-a4a1-85ef20094161")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR015"
 			(at 233.68 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -9241,7 +9241,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "#PWR018")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -9258,7 +9258,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "67fe2ff9-2d2d-4bf9-862f-f9a72a026ded")
-		(property "Reference" "TP39"
+		(property "Reference" "TP34"
 			(at 31.75 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9281,7 +9281,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 26.67 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -9320,7 +9320,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "TP39")
+					(reference "TP34")
 					(unit 1)
 				)
 			)
@@ -9337,7 +9337,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6b326a07-cade-41e5-888f-7ad54d72fd79")
-		(property "Reference" "TP43"
+		(property "Reference" "TP38"
 			(at 31.75 90.17 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9360,7 +9360,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 26.67 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -9399,7 +9399,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "TP43")
+					(reference "TP38")
 					(unit 1)
 				)
 			)
@@ -9417,7 +9417,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7057f58d-e39d-47a9-8027-143c9faa60a0")
-		(property "Reference" "C56"
+		(property "Reference" "C54"
 			(at 95.25 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9492,7 +9492,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "C56")
+					(reference "C54")
 					(unit 1)
 				)
 			)
@@ -9746,7 +9746,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77609411-2f1c-42c1-81f1-469b53014c1d")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR013"
 			(at 186.69 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -9807,7 +9807,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "#PWR016")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -9824,7 +9824,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "77b4ddde-f0ec-4b9b-bcae-611fcee04516")
-		(property "Reference" "R64"
+		(property "Reference" "R6"
 			(at 41.91 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9897,7 +9897,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "R64")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -9914,7 +9914,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "78795274-acff-4620-8791-dde6efffe5f4")
-		(property "Reference" "TP47"
+		(property "Reference" "TP42"
 			(at 31.75 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9937,7 +9937,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 26.67 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -9976,7 +9976,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "TP47")
+					(reference "TP42")
 					(unit 1)
 				)
 			)
@@ -9993,7 +9993,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "78eea085-dd02-487c-bf83-e6a85b58681b")
-		(property "Reference" "TP42"
+		(property "Reference" "TP37"
 			(at 31.75 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10016,7 +10016,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 26.67 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -10055,7 +10055,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "TP42")
+					(reference "TP37")
 					(unit 1)
 				)
 			)
@@ -10072,7 +10072,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "798a5f27-efba-4275-9d99-50cec176a433")
-		(property "Reference" "C60"
+		(property "Reference" "C58"
 			(at 119.38 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10147,7 +10147,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "C60")
+					(reference "C58")
 					(unit 1)
 				)
 			)
@@ -10164,7 +10164,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7d44c653-1502-49f8-83b3-b471082619b3")
-		(property "Reference" "R16"
+		(property "Reference" "R14"
 			(at 265.43 127 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10237,7 +10237,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "R16")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -10254,7 +10254,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8795614c-88ae-400c-a18c-2f2282628d3e")
-		(property "Reference" "TP52"
+		(property "Reference" "TP47"
 			(at 31.75 121.92 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10277,7 +10277,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 26.67 127 0)
 			(hide yes)
 			(show_name no)
@@ -10316,7 +10316,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "TP52")
+					(reference "TP47")
 					(unit 1)
 				)
 			)
@@ -10333,7 +10333,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "87dad3dd-78e2-4b7a-b241-01afd82e008c")
-		(property "Reference" "C54"
+		(property "Reference" "C52"
 			(at 63.5 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10408,7 +10408,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "C54")
+					(reference "C52")
 					(unit 1)
 				)
 			)
@@ -10425,7 +10425,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8f27a3ce-6a8f-4e6e-b9d0-7725fda50c59")
-		(property "Reference" "TP38"
+		(property "Reference" "TP33"
 			(at 31.75 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10448,7 +10448,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 26.67 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -10487,7 +10487,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "TP38")
+					(reference "TP33")
 					(unit 1)
 				)
 			)
@@ -10505,7 +10505,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92af05bd-345d-4a5d-a5c8-f97ba8c0626e")
-		(property "Reference" "R12"
+		(property "Reference" "R10"
 			(at 213.36 55.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10580,7 +10580,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "R12")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -10597,7 +10597,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "950143ea-8d0e-48e9-bd70-0e16b98092a3")
-		(property "Reference" "D22"
+		(property "Reference" "D2"
 			(at 259.08 132.3974 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10682,7 +10682,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "D22")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -10700,7 +10700,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9febdc4b-2aff-45b5-9253-d8b80a5a8b2e")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR09"
 			(at 66.04 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -10761,7 +10761,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "#PWR012")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -11046,7 +11046,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a9805c6e-b885-4555-8c62-c35140db8b09")
-		(property "Reference" "TP50"
+		(property "Reference" "TP45"
 			(at 31.75 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11069,7 +11069,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 26.67 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -11108,7 +11108,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "TP50")
+					(reference "TP45")
 					(unit 1)
 				)
 			)
@@ -11126,7 +11126,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1b72262-f844-458d-920d-eb8ef18d56cf")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR018"
 			(at 255.27 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -11187,7 +11187,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "#PWR069")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -11307,7 +11307,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c85ff992-bff3-49c2-81ab-254fe9b7e6ad")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR019"
 			(at 259.08 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -11368,7 +11368,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "#PWR021")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -11385,7 +11385,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d68a9d79-4c0f-43b0-b614-f2564fa09287")
-		(property "Reference" "TP40"
+		(property "Reference" "TP35"
 			(at 31.75 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11408,7 +11408,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 26.67 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -11447,7 +11447,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "TP40")
+					(reference "TP35")
 					(unit 1)
 				)
 			)
@@ -11464,7 +11464,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d71d917a-0710-4818-a8a5-00585225f6f1")
-		(property "Reference" "TP45"
+		(property "Reference" "TP40"
 			(at 31.75 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11487,7 +11487,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 26.67 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -11526,7 +11526,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "TP45")
+					(reference "TP40")
 					(unit 1)
 				)
 			)
@@ -11544,7 +11544,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7d8e290-72cc-4613-b88e-8f3f11101462")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR011"
 			(at 92.71 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -11605,7 +11605,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "#PWR013")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -11623,7 +11623,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d89252e9-4a3c-48c6-8f2c-4ee1df44dc50")
-		(property "Reference" "R7"
+		(property "Reference" "R8"
 			(at 81.28 166.37 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11696,7 +11696,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "R7")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -11799,7 +11799,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e0cddd1a-cf4a-4cb2-a764-8d362e3ec989")
-		(property "Reference" "TP49"
+		(property "Reference" "TP44"
 			(at 31.75 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11822,7 +11822,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 26.67 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -11861,7 +11861,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "TP49")
+					(reference "TP44")
 					(unit 1)
 				)
 			)
@@ -11878,7 +11878,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ec3c482d-cf55-4eae-9b62-f6e430df2bb0")
-		(property "Reference" "TP46"
+		(property "Reference" "TP41"
 			(at 31.75 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11901,7 +11901,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 26.67 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -11940,7 +11940,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "TP46")
+					(reference "TP41")
 					(unit 1)
 				)
 			)
@@ -11958,7 +11958,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f459332e-a4af-4bb8-8f67-6de158e0c13a")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR016"
 			(at 237.49 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -12019,7 +12019,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "#PWR019")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -12037,7 +12037,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f5ad9180-f058-4c9a-b5d0-804b27b99da4")
-		(property "Reference" "C52"
+		(property "Reference" "C50"
 			(at 27.94 36.8299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12112,7 +12112,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "C52")
+					(reference "C50")
 					(unit 1)
 				)
 			)
@@ -12129,7 +12129,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f6225e8f-03d9-415d-b4c8-0c4a1622ddfa")
-		(property "Reference" "C53"
+		(property "Reference" "C51"
 			(at 60.96 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12204,7 +12204,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "C53")
+					(reference "C51")
 					(unit 1)
 				)
 			)
@@ -12222,7 +12222,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f90abd1c-51fe-4ffb-8005-f90eba2af2b8")
-		(property "Reference" "R13"
+		(property "Reference" "R11"
 			(at 213.36 66.0399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12297,7 +12297,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "R13")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -12315,7 +12315,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9f96af7-4758-4fc2-8df3-bb4af70ef9a3")
-		(property "Reference" "C55"
+		(property "Reference" "C53"
 			(at 83.82 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12390,7 +12390,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "C55")
+					(reference "C53")
 					(unit 1)
 				)
 			)
@@ -12407,7 +12407,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fa7e8457-25d2-4d59-9928-afa4213a9b91")
-		(property "Reference" "R14"
+		(property "Reference" "R12"
 			(at 260.35 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12480,7 +12480,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/61c44d95-e9eb-4623-a9f1-0a611a03a200"
-					(reference "R14")
+					(reference "R12")
 					(unit 1)
 				)
 			)

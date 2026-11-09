@@ -6,4 +6,6 @@
 	(lib (name "TLV7633DGNR") (type "KiCad") (uri "${KIPRJMOD}/libraries/Symbols/TLV76733DGNR.kicad_sym") (options "") (descr ""))
 	(lib (name "IRLML0040TRPBF") (type "KiCad") (uri "${KIPRJMOD}/libraries/Symbols/IRLML6344TRPBF.kicad_sym") (options "") (descr ""))
 	(lib (name "DRV8353FS") (type "KiCad") (uri "${KIPRJMOD}/libraries/Symbols/DRV8353FS.kicad_sym") (options "") (descr ""))
+	(lib (name "test") (type "KiCad") (uri "${KIPRJMOD}/libraries/Symbols/0_switching_regulator.kicad_sym") (options "") (descr ""))
+	(lib (name "symbols") (type "KiCad") (uri "${KIPRJMOD}/libraries/Symbols") (options "") (descr ""))
 )

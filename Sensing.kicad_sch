@@ -1323,7 +1323,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "03d9dcb4-7d31-4a8a-87ef-549f52d6247a")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR069"
 			(at 36.83 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -1384,7 +1384,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "#PWR063")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -1402,7 +1402,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09bf4715-e41f-4a19-8501-0517561414b3")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR070"
 			(at 120.65 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -1463,7 +1463,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "#PWR064")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -1481,7 +1481,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "164eb60e-4342-40ea-aa25-74e554c5264f")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR071"
 			(at 205.74 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -1542,7 +1542,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "#PWR065")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -1560,7 +1560,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3985ae3d-d849-44ff-b01c-a23cbc0368eb")
-		(property "Reference" "C104"
+		(property "Reference" "C106"
 			(at 60.96 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1635,7 +1635,100 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "C104")
+					(reference "C106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 205.74 60.96 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e1384c3-cc1c-497c-9df9-119999f7ef5d")
+		(property "Reference" "R57"
+			(at 208.28 59.6899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k 1% 0W1"
+			(at 208.28 62.2299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 207.518 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/products/Resistors/part/RC0603FR-0710KL"
+			(at 205.74 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 205.74 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "model" "RC0603FR-0710KL"
+			(at 205.74 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5397567f-20d2-451e-aa5f-e893c2bb15bd")
+		)
+		(pin "1"
+			(uuid "bc368090-aa90-4599-aabb-1562b8298b28")
+		)
+		(instances
+			(project "PCB"
+				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
+					(reference "R57")
 					(unit 1)
 				)
 			)
@@ -1746,7 +1839,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a4b8e12-b1cd-417f-90a6-1342d14fcc19")
-		(property "Reference" "C106"
+		(property "Reference" "C108"
 			(at 229.87 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1821,7 +1914,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "C106")
+					(reference "C108")
 					(unit 1)
 				)
 			)
@@ -1839,7 +1932,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8e8b3226-79ff-441c-91da-7a859d6527b8")
-		(property "Reference" "R61"
+		(property "Reference" "R55"
 			(at 39.37 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1850,7 +1943,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k 1%"
+		(property "Value" "10k 1% 0W1"
 			(at 39.37 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1914,7 +2007,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "R61")
+					(reference "R55")
 					(unit 1)
 				)
 			)
@@ -2025,7 +2118,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0ca93b1-f1ec-4837-a16c-301e8fe68e3b")
-		(property "Reference" "C105"
+		(property "Reference" "C107"
 			(at 144.78 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2100,100 +2193,7 @@
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "C105")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 205.74 60.96 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b17a37e2-32d9-4e23-aa15-11756524ec26")
-		(property "Reference" "R63"
-			(at 208.28 59.6899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10k 1%"
-			(at 208.28 62.2299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 207.518 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/products/Resistors/part/RC0603FR-0710KL"
-			(at 205.74 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 205.74 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "model" "RC0603FR-0710KL"
-			(at 205.74 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "9a0aa612-1683-4b85-93a2-b9933c331825")
-		)
-		(pin "1"
-			(uuid "5f579f0e-3629-4324-a8d6-09897b6aa088")
-		)
-		(instances
-			(project "PCB"
-				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "R63")
+					(reference "C107")
 					(unit 1)
 				)
 			)
@@ -2303,8 +2303,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ee7f5b63-9e39-41a9-bc7e-2d2c052d2bdd")
-		(property "Reference" "R62"
+		(uuid "ddb3a3a8-0eef-4894-b4ff-7ec1dec0ca05")
+		(property "Reference" "R56"
 			(at 123.19 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2315,7 +2315,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k 1%"
+		(property "Value" "10k 1% 0W1"
 			(at 123.19 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2371,15 +2371,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "cb4463af-9da7-4004-b362-3be8413de316")
+			(uuid "1a145085-cffb-44a0-b315-31a636e3332b")
 		)
 		(pin "1"
-			(uuid "59fe62b7-a4f3-4d26-b968-648edab689fd")
+			(uuid "e22c1f03-5938-4af1-ac81-961f3f416d23")
 		)
 		(instances
 			(project "PCB"
 				(path "/e986f2cc-ac15-4a41-a21b-f53c473bf7ea/c559a0e7-8a33-4172-93c8-21c12a4bffe4"
-					(reference "R62")
+					(reference "R56")
 					(unit 1)
 				)
 			)
